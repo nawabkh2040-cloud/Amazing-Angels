@@ -1,8 +1,12 @@
 import { Button } from './ui/button';
-import { Sparkles, ChevronDown } from 'lucide-react';
+import { Badge } from './ui/badge';
+import { Sparkles, ArrowRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Mockup, MockupFrame } from './ui/mockup';
+import { Glow } from './ui/glow';
 import heroImage from '@/assets/hero-bg.jpg';
+import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -13,97 +17,78 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Hero Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="School Background" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-primary/80 to-accent/85" />
-      </div>
-
-      <div className="container mx-auto px-4 pt-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+    <section
+      id="home"
+      className={cn(
+        "bg-background text-foreground",
+        "py-12 sm:py-24 md:py-32 px-4",
+        "fade-bottom overflow-hidden pb-0 relative"
+      )}
+    >
+      <div className="mx-auto flex max-w-7xl flex-col gap-12 pt-16 sm:gap-24">
+        <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full mb-8 border border-white/30"
-          >
-            <Sparkles className="h-5 w-5" />
-            <span className="text-sm font-semibold">Established 2017 • 100% Board Exam Success</span>
-          </motion.div>
+          <Badge variant="outline" className="animate-appear gap-2">
+            <Sparkles className="h-4 w-4" />
+            <span className="text-muted-foreground">Established 2017</span>
+            <Link to="/about" className="flex items-center gap-1 hover:text-foreground transition-colors">
+              100% Board Exam Success
+              <ArrowRight className="h-3 w-3" />
+            </Link>
+          </Badge>
 
-          {/* Main Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-2xl"
-          >
-            Welcome to{' '}
-            <span className="block mt-2 bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 bg-clip-text text-transparent">
-              Amazing Angels
-            </span>
-            <span className="block mt-2">Public School</span>
-          </motion.h1>
-
-          {/* Subheading */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-2xl md:text-3xl text-white/95 mb-6 font-light"
-          >
-            Empowering Minds, Enriching Lives
-          </motion.p>
+          {/* Title */}
+          <h1 className="relative z-10 inline-block animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-4xl font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
+            Welcome to Amazing Angels Public School
+          </h1>
 
           {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed"
-          >
-            Quality English medium education in Khajrana, Indore. Affiliated with MP State Board, 
-            we nurture academic excellence and holistic development in every child.
-          </motion.p>
+          <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-muted-foreground opacity-0 delay-100 sm:text-xl">
+            Empowering Minds, Enriching Lives. Quality English medium education in Khajrana, Indore.
+          </p>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Link to="/admissions">
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] hover:scale-105 transition-all text-lg px-10 py-7 font-semibold"
-              >
+          {/* Actions */}
+          <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300 flex-col sm:flex-row">
+            <Button variant="glow" size="lg" asChild>
+              <Link to="/admissions" className="flex items-center gap-2">
+                <Sparkles className="h-5 w-5" />
                 Apply Now
-              </Button>
-            </Link>
-            <Link to="/about">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-primary shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-lg px-10 py-7 font-semibold bg-white/10 backdrop-blur-sm"
-              >
+              </Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/about" className="flex items-center gap-2">
                 Explore More
-              </Button>
-            </Link>
-          </motion.div>
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+
+          {/* Image with Glow */}
+          <div className="relative pt-12 w-full">
+            <MockupFrame
+              className="animate-appear opacity-0 delay-700 mx-auto"
+              size="small"
+            >
+              <Mockup type="responsive">
+                <img
+                  src={heroImage}
+                  alt="Amazing Angels Public School Campus"
+                  className="w-full h-auto"
+                />
+              </Mockup>
+            </MockupFrame>
+            <Glow
+              variant="top"
+              className="animate-appear-zoom opacity-0 delay-1000"
+            />
+          </div>
 
           {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20"
+            transition={{ duration: 0.6, delay: 1.2 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8"
           >
             {[
               { value: '300+', label: 'Students' },
@@ -115,11 +100,11 @@ const Hero = () => {
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
-                className="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-105"
+                transition={{ duration: 0.4, delay: 1.4 + index * 0.1 }}
+                className="bg-accent/10 backdrop-blur-md p-6 rounded-xl border border-border hover:bg-accent/20 transition-all hover:scale-105"
               >
-                <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-sm text-white/80">{stat.label}</div>
+                <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -130,9 +115,9 @@ const Hero = () => {
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 1.5 }}
+        transition={{ duration: 0.6, delay: 1.8 }}
         onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/80 hover:text-white transition-colors group"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
       >
         <span className="text-sm font-medium">Scroll to explore</span>
         <ChevronDown className="w-6 h-6 animate-bounce" />
