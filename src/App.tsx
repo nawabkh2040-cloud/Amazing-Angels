@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/Navbar";
+import { Header } from "./components/ui/header-with-search";
 import CustomCursor from "./components/CustomCursor";
 import Preloader from "./components/Preloader";
 import Footer from "./components/Footer";
@@ -29,7 +29,7 @@ const App = () => (
       <BrowserRouter>
         <Preloader />
         <CustomCursor />
-        <Navbar />
+        <Header />
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<HomePage />} />
