@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import logo from '@/assets/logo.jpg';
 
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,13 +16,6 @@ const Preloader = () => {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-primary via-primary-light to-accent">
       <div className="text-center">
-        <div className="mb-8 animate-pulse">
-          <img
-            src={logo}
-            alt="AAPS Logo"
-            className="h-32 w-32 mx-auto object-contain animate-bounce-slow"
-          />
-        </div>
         <h1 className="text-4xl font-bold text-white mb-4 animate-fade-in">
           Amazing Angels
         </h1>
