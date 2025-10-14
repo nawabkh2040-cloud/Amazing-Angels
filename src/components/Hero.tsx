@@ -3,9 +3,6 @@ import { Badge } from './ui/badge';
 import { Sparkles, ArrowRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mockup, MockupFrame } from './ui/mockup';
-import { Glow } from './ui/glow';
-import heroImage from '@/assets/hero-bg.jpg';
 import { cn } from '@/lib/utils';
 
 const Hero = () => {
@@ -61,26 +58,6 @@ const Hero = () => {
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
-          </div>
-
-          {/* Image with Glow */}
-          <div className="relative pt-12 w-full">
-            <MockupFrame
-              className="animate-appear opacity-0 delay-700 mx-auto"
-              size="small"
-            >
-              <Mockup type="responsive">
-                <img
-                  src={heroImage}
-                  alt="Amazing Angels Public School Campus"
-                  className="w-full h-auto"
-                />
-              </Mockup>
-            </MockupFrame>
-            <Glow
-              variant="top"
-              className="animate-appear-zoom opacity-0 delay-1000"
-            />
           </div>
 
           {/* Stats */}

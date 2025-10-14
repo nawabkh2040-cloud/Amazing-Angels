@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Link, useLocation } from "react-router-dom"
 import { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
+import logo from "@/assets/logo.jpg"
 
 interface NavItem {
   name: string
@@ -47,6 +48,10 @@ export function NavBar({ items, className }: NavBarProps) {
       )}
     >
       <div className="flex items-center gap-1 sm:gap-3 bg-background/80 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
+        <Link to="/" className="flex items-center px-2 sm:px-3">
+          <img src={logo} alt="Amazing Angels Public School" className="h-8 w-8 rounded-full object-cover" />
+        </Link>
+        <div className="h-8 w-px bg-border" />
         {items.map((item) => {
           const Icon = item.icon
           const isActive = activeTab === item.name
