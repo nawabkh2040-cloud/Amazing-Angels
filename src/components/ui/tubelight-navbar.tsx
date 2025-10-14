@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Link, useLocation } from "react-router-dom"
 import { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
-import logo from "@/assets/logo.jpg"
+import logo from "@/assets/hero-bg.jpg"
 
 interface NavItem {
   name: string
