@@ -66,29 +66,29 @@ const HomePage = () => {
         {/* Heading */}
         <div>
           <h2 className="text-5xl md:text-6xl font-extrabold text-blue-950">
-            About
+            About Us
           </h2>
-          <h2 className="text-5xl md:text-6xl font-extrabold text-blue-600 -mt-3">
+          {/* <h2 className="text-5xl md:text-6xl font-extrabold text-blue-600 -mt-3">
             Us
-          </h2>
+          </h2> */}
           <div className="h-1 w-24 bg-blue-600 mt-3 rounded-full"></div>
         </div>
 
         {/* Description */}
-        <div className="space-y-5 text-lg text-blue-800 leading-relaxed font-medium">
+        <div className="space-y-5 text-lg text-gray-800 leading-relaxed font-medium">
           <p>
-            <span className="text-blue-900 font-bold">Since 2017</span>, Amazing Angels Public School has been a trusted name in <span className="text-blue-700">quality English medium education</span> in Khajrana, Indore.
+            <span className="text-gray-900 font-bold">Since 2017</span>, Amazing Angels Public School has been a trusted name in <span className="text-gray-700">quality English medium education</span> in Khajrana, Indore.
           </p>
           <p>
-            Affiliated with <span className="font-semibold text-blue-700">MP State Board</span>, we proudly deliver <span className="font-bold text-blue-900">100% board exam success</span> — year after year.
+            Affiliated with <span className="font-semibold text-gray-700">MP State Board</span>, we proudly deliver <span className="font-bold text-gray-900">100% board exam success</span> — year after year.
           </p>
           <p>
-            We don’t just teach — we <span className="italic text-blue-700">inspire growth</span> in academics, character, and confidence.
+            We don’t just teach — we <span className="italic text-gray-700">inspire growth</span> in academics, character, and confidence.
           </p>
         </div>
 
         {/* CTA Button */}
-        <Link to="/about">
+        {/* <Link to="/about">
           <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-9 py-7 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 group"
@@ -96,10 +96,10 @@ const HomePage = () => {
             Explore Our Story
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-        </Link>
+        </Link> */}
 
         {/* Mini Stats */}
-        <div className="flex gap-6 pt-4">
+        {/* <div className="flex gap-6 pt-4">
           <div className="text-center">
             <p className="text-3xl font-bold text-blue-900">7+</p>
             <p className="text-sm text-blue-600 font-medium">Years</p>
@@ -112,7 +112,7 @@ const HomePage = () => {
             <p className="text-3xl font-bold text-blue-900">500+</p>
             <p className="text-sm text-blue-600 font-medium">Students</p>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   </div>
