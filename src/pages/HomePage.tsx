@@ -78,7 +78,7 @@ const HomePage = () => {
         </div>
 
         {/* Description */}
-        <div className="space-y-5 text-lg text-gray-800 leading-relaxed font-medium">
+        <div className="space-y-5 text-sm lg:text-lg text-gray-800 leading-relaxed font-medium">
           <p>
             <span className="text-gray-900 font-bold">Since 2017</span>, Amazing Angels Public School has been a trusted name in <span className="text-gray-700">quality English medium education</span> in Khajrana, Indore.
           </p>

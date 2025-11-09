@@ -13,27 +13,27 @@ const WhyChooseUs= () => {
                 Our School
               </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm lg:text-lg  text-gray-600 max-w-2xl mx-auto">
             Discover a nurturing environment where academic excellence meets
             holistic growth — preparing students for a bright and successful
             future.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-">
+          <div className="space-y-4">
             {/* Feature 1 - Qualified Teachers */}
-            <div className="group p-6 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300">
+            <div className="group p-4 lg:p-6 rounded-2xl  hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="flex-shrink-0 w-10 h-10 lg:w-14 lg:h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                    <GiTeacher  className="text-white text-2xl"/>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-700 mb-2">
+                  <h3 className="text-lg lg:text-xl font-semibold text-blue-700 mb-2">
                     Qualified & Caring Teachers
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-sm lg:text-lg text-gray-600">
                     Our experienced educators inspire curiosity, creativity, and
                     confidence through innovative teaching methods.
                   </p>
@@ -42,16 +42,16 @@ const WhyChooseUs= () => {
             </div>
 
             {/* Feature 2 - Holistic Learning */}
-            <div className="group p-6 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300">
+            <div className="group p-4 lg:p-6 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="flex-shrink-0 w-10 h-10 lg:w-14 lg:h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Church className="text-white"/>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-700 mb-2">
+                  <h3 className="text-lg lg:text-xl font-semibold text-blue-700 mb-2">
                     Holistic Learning Environment
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-sm lg:text-lg  text-gray-600">
                     We focus on academics, sports, arts, and values to ensure
                     the all-round development of every student.
                   </p>
@@ -60,16 +60,16 @@ const WhyChooseUs= () => {
             </div>
 
             {/* Feature 3 - Modern Infrastructure */}
-            <div className="group p-6 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300">
+            <div className="group p-4 lg:p-6 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="flex-shrink-0 w-10 h-10 lg:w-14 lg:h-14 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <HiHomeModern className="text-white  text-2xl" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-700 mb-2">
+                  <h3 className="text-lg lg:text-xl font-semibold text-blue-700 mb-2">
                     Modern Infrastructure
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-sm lg:text-lg  text-gray-600">
                     Equipped with smart classrooms, digital labs, and safe
                     campuses to make learning engaging and effective.
                   </p>
