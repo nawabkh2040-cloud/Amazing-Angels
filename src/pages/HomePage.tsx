@@ -21,12 +21,12 @@ const HomePage = () => {
 
   return (
     <PageTransition>
-      <div className="">
+      <div className="w-full">
         <Slider />
         <ScrollProgress />
 
         {/* About Preview */}
-        <section className="py-20 md:py-28 bg-white">
+        <section className="py-20 md:py-28 bg-white ">
   <div className="container mx-auto px-4">
     <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
 

@@ -5,21 +5,21 @@ export default function SchoolSlider() {
 
   const slides = [
     {
-      image: "/hero1.png",
+      image: "https://cdn.pixabay.com/photo/2018/06/10/11/15/schultute-3466186_1280.jpg",
       title: "Welcome to Our School",
       description:
         "Empowering young minds to reach their full potential through quality education and holistic development.",
     },
     {
       image:
-        "https://media.istockphoto.com/id/950609678/photo/elementary-girl-at-school.webp?a=1&b=1&s=612x612&w=0&k=20&c=OmwwnFxCEgiTz7osPPwjvH3ffj2D6UCP429xTmww1Wc=",
+        "/hero2.png",
       title: "Excellence in Education",
       description:
         "State-of-the-art facilities and experienced faculty dedicated to nurturing future leaders and innovators.",
     },
     {
       image:
-        "https://media.istockphoto.com/id/1375909098/photo/happy-kid-with-cardboard-rocket-on-back-with-space-universe-and-planets-doodle-drawing-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=Kw9kfy0Cj0kN1SmkjTTVdGQu7d_3Jb3BRtM02CeIu4E=",
+        "/hero3.png",
       title: "Building Tomorrow's Future",
       description:
         "A vibrant learning community where every student is encouraged to dream big and achieve their goals.",
@@ -40,7 +40,7 @@ export default function SchoolSlider() {
   }, []);
 
   return (
-    <div className="relative h-[40vh] lg:h-screen  w-full overflow-hidden">
+    <div className="relative h-[40vh] lg:h-screen w-full overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -49,7 +49,7 @@ export default function SchoolSlider() {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          {/* Background Image – now height follows parent */}
+          {/* Background Image */}
           <img
             src={slide.image}
             alt={slide.title}
@@ -57,42 +57,35 @@ export default function SchoolSlider() {
           />
 
           {/* Black Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-60" />
+          <div className="absolute inset-0 bg-black bg-opacity-50" />
 
-          {/* Text Content – Left Side */}
-          <div className="absolute inset-0 flex items-center">
-            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24">
-              <div className="max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl text-white">
-                {/* Title */}
-                <h1 className="text-2xl leading-tight font-bold mb-2
-                               sm:text-3xl sm:mb-3
-                               md:text-4xl md:mb-4
-                               lg:text-5xl lg:mb-5
-                               xl:text-6xl xl:mb-6">
-                  {slide.title}
-                </h1>
+          {/* Text Content – CENTERED & CURSIVE */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center text-white px-4 sm:px-6 md:px-8 lg:px-12">
+              {/* Title – Cursive */}
+              <h1
+                className="font-cursive italic text-2xl leading-tight font-bold mb-2
+                           sm:text-3xl sm:mb-3
+                           md:text-4xl md:mb-4
+                           lg:text-5xl lg:mb-5
+                           xl:text-6xl xl:mb-6"
+              >
+                {slide.title}
+              </h1>
 
-                {/* Description */}
-                <p className="text-xs leading-relaxed mb-4
-                              sm:text-base sm:mb-5
-                              md:text-lg md:mb-6
-                              lg:text-xl lg:mb-7
-                              xl:text-2xl xl:mb-8">
-                  {slide.description}
-                </p>
+              {/* Description – Cursive */}
+              <p
+                className="font-cursive italic  text-xs leading-relaxed mb-4
+                           sm:text-base sm:mb-5
+                           md:text-lg md:mb-6
+                           lg:text-xl lg:mb-7
+                           xl:text-2xl xl:mb-8"
+              >
+                {slide.description}
+              </p>
 
-                {/* Button */}
-                {/* <button
-                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold
-                             px-4 py-2 text-sm rounded-lg shadow-md hover:shadow-lg
-                             transition-all duration-300
-                             sm:px-5 sm:py-2.5 sm:text-base
-                             md:px-6 md:py-3 md:text-lg
-                             lg:px-7 lg:py-3.5 lg:text-xl"
-                >
-                  Learn More
-                </button> */}
-              </div>
+              {/* Uncomment if you want a button */}
+              {/* <button className="...">Learn More</button> */}
             </div>
           </div>
         </div>

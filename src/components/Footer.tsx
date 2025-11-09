@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-[#0a0a0f] via-[#111827] to-[#1e1b4b] text-gray-100 rounded-t-[4rem] shadow-inner">
+    <footer className="bg-gradient-to-br from-[#0a0a0f] via-[#111827] to-[#1e1b4b] text-gray-100 rounded-t-[2rem] lg:rounded-t-[4rem] shadow-inner">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
