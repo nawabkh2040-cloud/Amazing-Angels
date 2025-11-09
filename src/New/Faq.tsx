@@ -54,10 +54,12 @@ const Faq: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
+            <span className="text-gray-800 ">
               Frequently Asked
             </span>{" "}
-            Questions
+             <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
+                Questions
+              </span>
           </h1>
           <p className="text-base text-gray-600 mt-4">
             Find answers to common questions about our bus booking service

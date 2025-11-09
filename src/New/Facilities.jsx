@@ -48,8 +48,10 @@ const Facilities = () => {
           <p className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-2">
             Our Infrastructure
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            World-Class Facilities
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            World-Class  <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
+                Facilities
+              </span>
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             Designed to support academic excellence, personal growth, and holistic development.

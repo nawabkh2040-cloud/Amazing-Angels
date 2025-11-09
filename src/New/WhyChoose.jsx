@@ -8,8 +8,10 @@ const WhyChooseUs= () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center ">
-          <h2 className="text-4xl md:text-5xl font-main font-bold text-blue-700 mb-4">
-            Why Choose Our School
+          <h2 className="text-4xl md:text-5xl font-main font-bold text-gray-800 mb-4">
+            Why Choose  <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
+                Our School
+              </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover a nurturing environment where academic excellence meets

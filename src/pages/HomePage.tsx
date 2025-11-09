@@ -65,8 +65,11 @@ const HomePage = () => {
       >
         {/* Heading */}
         <div>
-          <h2 className="text-5xl md:text-6xl font-extrabold text-blue-950">
-            About Us
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-800">
+            About  
+             <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text ml-4 text-transparent">
+                 Us
+              </span>
           </h2>
           {/* <h2 className="text-5xl md:text-6xl font-extrabold text-blue-600 -mt-3">
             Us
