@@ -18,6 +18,7 @@ import ScholarshipsPage from "./pages/ScholarshipsPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
+import Slider from "./New/Slider";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            
             <Route path="/about" element={<AboutPage />} />
             <Route path="/academics" element={<AcademicsPage />} />
             <Route path="/facilities" element={<FacilitiesPage />} />
@@ -44,6 +46,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          
         </AnimatePresence>
         <Footer />
       </BrowserRouter>

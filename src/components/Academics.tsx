@@ -45,18 +45,18 @@ const Academics = () => {
   return (
     <section id="academics" className="py-20 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
+        {/* Section Header  */} 
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-primary">Academics</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl text-muted-foreground  mx-auto">
             Excellence through comprehensive curriculum and innovative teaching
           </p>
         </div>
 
         {/* Success Rate Banner */}
-        <Card className="p-8 md:p-12 mb-12 bg-gradient-to-r from-accent to-green-500 text-white shadow-2xl">
+        <Card className="p-8 md:p-12 mb-12 bg-gradient-to-r from-accent  via-blue-700 to-blue-800 text-white shadow-2xl">
           <div className="text-center">
             <GraduationCap className="h-16 w-16 mx-auto mb-4" />
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Unwavering Excellence</h3>

@@ -13,9 +13,14 @@ const Principal = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
-              Principal's Message
-            </span>
+           <span className="text-gray-800">
+  Principal's{" "}
+  <span className="bg-gradient-to-r from-blue-500 to-indigo-700 bg-clip-text text-transparent">
+
+    Message
+  </span>
+</span>
+
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto" />
         </motion.div>

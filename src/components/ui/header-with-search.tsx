@@ -1,9 +1,9 @@
 import React from 'react';
-import { MenuIcon, SearchIcon } from 'lucide-react';
+import { MenuIcon } from 'lucide-react';
 import { Sheet, SheetContent, SheetFooter } from '@/components/ui/sheet';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { CommandItem, SearchModal } from '@/components/ui/search-modal';
+// search modal removed per design request
 import { Link } from 'react-router-dom';
 import logo from '@/assets/school-logo.jpg';
 
@@ -44,16 +44,7 @@ export function Header() {
 							</Link>
 						))}
 					</div>
-					<SearchModal data={pages}>
-						<Button
-							variant="outline"
-							className="relative size-9 cursor-pointer p-0 md:border xl:h-9 xl:w-60 xl:justify-between xl:px-3 xl:py-2"
-						>
-							<span className="hidden xl:inline-flex">Search...</span>
-							<span className="sr-only">Search</span>
-							<SearchIcon className="size-4" />
-						</Button>
-					</SearchModal>
+					{/* Search removed as requested */}
 					<Sheet open={open} onOpenChange={setOpen}>
 						<Button
 							size="icon"
@@ -95,47 +86,4 @@ export function Header() {
 	);
 }
 
-const pages: CommandItem[] = [
-	{
-		id: 'home',
-		title: 'Home',
-		description: 'Welcome to Amazing Angels Public School',
-		category: 'Navigation',
-	},
-	{
-		id: 'about',
-		title: 'About Us',
-		description: 'Learn about our school history and values',
-		category: 'Navigation',
-	},
-	{
-		id: 'academics',
-		title: 'Academics',
-		description: 'Explore our academic programs and curriculum',
-		category: 'Navigation',
-	},
-	{
-		id: 'facilities',
-		title: 'Facilities',
-		description: 'Tour our state-of-the-art facilities',
-		category: 'Navigation',
-	},
-	{
-		id: 'activities',
-		title: 'Activities',
-		description: 'Discover extracurricular activities',
-		category: 'Navigation',
-	},
-	{
-		id: 'admissions',
-		title: 'Admissions',
-		description: 'Apply for admission to our school',
-		category: 'Navigation',
-	},
-	{
-		id: 'contact',
-		title: 'Contact',
-		description: 'Get in touch with us',
-		category: 'Navigation',
-	},
-];
+// pages data removed with search modal

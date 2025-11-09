@@ -6,17 +6,17 @@ const Facilities = () => {
     {
       title: 'Computer Lab',
       description: 'Equipped with cutting-edge technology, providing students with hands-on experience in various applications. A hub for interactive learning, coding exercises, and research.',
-      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&h=600&fit=crop',
+      image: 'https://images.unsplash.com/photo-1719159381981-1327b22aff9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBsYWJzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600',
     },
     {
       title: 'Library',
       description: 'A treasure trove of knowledge with an extensive collection of books covering various genres and subjects. A haven for avid readers and independent research.',
-      image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop',
+      image: 'https://media.istockphoto.com/id/2168307181/photo/the-bookshelf-in-the-library-is-filled-with-bookshelves.webp?a=1&b=1&s=612x612&w=0&k=20&c=TRx6R5W074bbKiHGhQFNG7cXS3GTcsWUeXSf9bkcNII=',
     },
     {
       title: 'Art Classes',
       description: 'Specialized sessions designed to unleash artistic potential within each student. Explore various mediums and forms of expression, encouraging creativity and imagination.',
-      image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&h=600&fit=crop',
+      image: 'https://plus.unsplash.com/premium_photo-1705882850471-adc694c55036?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXJ0JTIwY2xhc3Nlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600',
     },
     {
       title: 'Sports Ground',
