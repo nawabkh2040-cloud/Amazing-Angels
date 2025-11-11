@@ -26,7 +26,7 @@ const HomePage = () => {
         <ScrollProgress />
 
         {/* About Preview */}
-        <section className="py-20 md:py-28 bg-white ">
+        <section className="py-10 lg:py-20 md:py-28 bg-white ">
   <div className="container mx-auto px-4">
     <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
 
@@ -120,7 +120,7 @@ const HomePage = () => {
     </div>
   </div>
 </section>
- {/* <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+ {/* <section className="py-10 lg:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -177,7 +177,7 @@ const HomePage = () => {
         <Principal />
 
         {/* Achievements Counter */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800">
+        <section className="py-5 lg:py-10 lg:py-20 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -185,18 +185,18 @@ const HomePage = () => {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-1 lg:mb-4">
                 Our Achievements
               </h2>
-              <p className="text-white/80 text-lg">Building a legacy of excellence</p>
+              <p className="text-white/80 text-sm lg:text-lg">Building a legacy of excellence</p>
             </motion.div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-4 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {[
-                { icon: <BookOpen className="w-12 h-12" />, value: '300+', label: 'Happy Students' },
-                { icon: <Trophy className="w-12 h-12" />, value: '100%', label: 'Board Success Rate' },
-                { icon: <Target className="w-12 h-12" />, value: '2400', label: 'Sq Ft Campus' },
-                { icon: <Trophy className="w-12 h-12" />, value: '7+', label: 'Years of Excellence' },
+                { icon: <BookOpen className="lg:w-12 w-6 h-12 lg:h-12" />, value: '300+', label: 'Happy Students' },
+                { icon: <Trophy className="lg:w-12 w-6 h-12 lg:h-12" />, value: '100%', label: 'Board Success Rate' },
+                { icon: <Target className="lg:w-12 w-6 h-12 lg:h-12" />, value: '2400', label: 'Sq Ft Campus' },
+                { icon: <Trophy className="lg:w-12 w-6 h-12 lg:h-12" />, value: '7+', label: 'Years of Excellence' },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -206,9 +206,9 @@ const HomePage = () => {
                   transition={{ delay: index * 0.1 }}
                   className="text-center text-white"
                 >
-                  <div className="mb-4 flex justify-center">{stat.icon}</div>
-                  <div className="text-4xl font-bold mb-2">{stat.value}</div>
-                  <div className="text-white/80">{stat.label}</div>
+                  <div className="mb-1  lg:mb-4 flex justify-center">{stat.icon}</div>
+                  <div className="text-base lg:text-4xl mb-0 font-bold lg:mb-2">{stat.value}</div>
+                  <div className="text-white/80 text-xs lg:text-sm">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -216,7 +216,7 @@ const HomePage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-background">
+        <section className="py-10 lg:py-10 lg:py-20 bg-background">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -232,18 +232,18 @@ const HomePage = () => {
                   </span>
                 </span>
               </h2>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-sm lg:text-xl text-muted-foreground mb-8">
                 Give your child the best education and a bright future at Amazing Angels Public School
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/admissions">
-                  <Button size="lg" className="text-lg px-10 py-7">
+                  <Button size="lg" className="text-sm lg:text-lg px-5 py-4 lg:px-10 lg:py-7">
                     Apply for Admission
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button size="lg" variant="outline" className="text-lg px-10 py-7">
+                  <Button size="lg" variant="outline" className="text-sm lg:text-lg px-5 py-4 lg:px-10 lg:py-7">
                     Contact Us
                   </Button>
                 </Link>

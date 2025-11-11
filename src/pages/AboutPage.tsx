@@ -22,7 +22,7 @@ const AboutPage = () => {
         <ScrollProgress />
 
         {/* Premium Page Banner with Parallax */}
-        <section className="relative h-[70vh] min-h-[500px] bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#1e40af] overflow-hidden">
+        <section className="relative h-[50vh] lg:h-[60vh] min-h-[100px] lg:min-h-[400px] bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#1e40af] overflow-hidden">
           {/* Animated background image with parallax */}
           <motion.div
             className="absolute inset-0 bg-cover bg-center scale-110"
@@ -81,14 +81,14 @@ const AboutPage = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="inline-block mb-6"
               >
-                <span className="px-6 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white/90 text-sm font-medium tracking-wider">
+                <span className="px-6 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white/90 text-xs lg:text-sm font-medium tracking-wider">
                   WHO WE ARE
                 </span>
               </motion.div>
 
               {/* Main heading with stagger effect */}
               <motion.h1 
-                className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
+                className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-2 lg:mb-6 leading-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
@@ -106,7 +106,7 @@ const AboutPage = () => {
 
               {/* Description */}
               <motion.p 
-                className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto"
+                className="text-sm lg:text-xl md:text-2xl text-white/90 mb-4 lg:mb-8 leading-relaxed max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
@@ -135,7 +135,7 @@ const AboutPage = () => {
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 className="flex flex-col items-center gap-2"
               >
-                <span className="text-white/70 text-sm font-medium tracking-wider">SCROLL DOWN</span>
+                <span className="text-white/70 text-xs lg:text-sm font-medium tracking-wider">SCROLL DOWN</span>
                 <svg
                   className="w-6 h-6 text-white/70"
                   fill="none"

@@ -11,17 +11,17 @@ const VisionMission = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section className="py-10 lg:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
         {/* Vision Card */}
-        <Card className="p-8 md:p-12 mb-12 bg-gradient-to-r from-primary to-primary-light text-primary-foreground shadow-2xl">
+        <Card className="p-8 md:p-12 mb-12 bg-gradient-to-r from-primary to-blue-950 text-primary-foreground shadow-2xl">
           <div className="flex items-center gap-4 mb-6">
             <div className="p-3 bg-white/20 rounded-full">
               <Target className="h-8 w-8" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
           </div>
-          <p className="text-lg md:text-xl leading-relaxed">
+          <p className="text-sm md:text-xl leading-relaxed">
             "Empowering Minds, Enriching Lives: Striving for Excellence in Education at Amazing Angels Public School."
           </p>
         </Card>
@@ -34,21 +34,21 @@ const VisionMission = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Our Mission</h2>
           </div>
-          <p className="text-muted-foreground mb-8 text-lg">
+          <p className="text-muted-foreground mb-8 text-sm lg:text-xl md:text-base">
             At Amazing Angels Public School, our mission is to provide a nurturing environment that fosters 
             academic excellence, holistic development, and values-driven education.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-2 lg:gap-4">
             {missions.map((mission, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors"
+                className="flex items-start gap-3 p-2 lg:p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors"
               >
                 <div className="mt-1">
                   <Lightbulb className="h-5 w-5 text-secondary" />
                 </div>
-                <p className="text-sm">{mission}</p>
+                <p className="text-xs lg:text-sm">{mission}</p>
               </div>
             ))}
           </div>

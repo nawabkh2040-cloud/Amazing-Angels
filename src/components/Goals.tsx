@@ -55,14 +55,14 @@ const Goals = () => {
   ];
 
   return (
-    <section id="goals" className="py-20 bg-background">
+    <section id="goals" className="py-10 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center  mb-6 lg:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Our <span className="text-primary">Goals</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm lg:text-lg text-muted-foreground max-w-2xl mx-auto">
             Seven pillars guiding our commitment to educational excellence
           </p>
         </div>

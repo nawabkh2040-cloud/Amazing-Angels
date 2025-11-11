@@ -16,7 +16,7 @@ const FacilitiesPage = () => {
         <ScrollProgress />
         
         {/* Page Banner */}
-        <section className="relative py-20 bg-gradient-to-br from-primary/95 via-accent/95 to-secondary/95 overflow-hidden">
+        <section className="relative py-10 lg:py-20 bg-gradient-to-br from-primary/95 via-accent/95 to-secondary/95 overflow-hidden">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${bannerImage})` }} />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-accent/80 to-secondary/90" />
           <div className="container mx-auto px-4 relative z-10">

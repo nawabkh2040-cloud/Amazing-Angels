@@ -27,10 +27,10 @@ const Scholarships = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section className="py-10 lg:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center  mb-6 lg:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-primary">Scholarships</span> & Medals
           </h2>

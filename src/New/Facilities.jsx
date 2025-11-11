@@ -35,7 +35,7 @@ const Facilities = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-10 lg:py-10 lg:py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
 
         {/* Section Header */}
@@ -43,7 +43,7 @@ const Facilities = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center  mb-6 lg:mb-16"
         >
           <p className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-2">
             Our Infrastructure
@@ -145,14 +145,14 @@ const Facilities = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-6 mt-16"
+          className="flex flex-wrap justify-center gap-6 mt-10 lg:mt-16"
         >
           {highlights.map((item, i) => (
             <div
               key={i}
-              className="flex items-center gap-3 px-5 py-3 bg-white border border-gray-200 rounded-full text-gray-700 font-medium text-sm shadow-sm"
+              className="flex items-center gap-1 lg:gap-3 px-1 py-1 lg:px-5 lg:py-3 bg-white border border-gray-200 rounded-full text-gray-700 font-medium text-xs lg:text-sm shadow-sm"
             >
-              <item.icon className="w-5 h-5 text-blue-600" />
+              <item.icon className="w-3 h-3 text-blue-600" />
               <span>{item.text}</span>
             </div>
           ))}

@@ -28,8 +28,8 @@ export function Header() {
 			)}
 		>
 			<nav className="mx-auto flex h-14 w-full max-w-7xl items-center justify-between px-4">
-				<Link to="/" className="hover:bg-accent flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 duration-100">
-					<img src={logo} alt="Amazing Angels Public School" className="h-8 w-8 rounded-full object-cover" />
+				<Link to="/" className=" flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 duration-100">
+					<img src={logo} alt="Amazing Angels Public School" className="h-12 w-12 rounded-full object-cover" />
 					<p className="font-bold text-sm hidden sm:block">Amazing Angels</p>
 				</Link>
 				<div className="flex items-center gap-2">

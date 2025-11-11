@@ -49,10 +49,10 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="bg-white py-20 px-4">
+    <div className="bg-white py-10 lg:py-10 lg:py-20 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center  mb-6 lg:mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
             <span className="text-gray-800 ">
               Frequently Asked

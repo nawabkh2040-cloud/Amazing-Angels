@@ -42,14 +42,14 @@ const Activities = () => {
   ];
 
   return (
-    <section id="activities" className="py-20 bg-gradient-to-b from-muted/20 to-background">
+    <section id="activities" className="py-10 lg:py-20 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center  mb-6 lg:mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">

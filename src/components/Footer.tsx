@@ -24,7 +24,7 @@ const Footer = () => {
                 <p className="text-sm text-gray-300">Public School</p>
               </div>
             </div>
-            <p className="text-sm text-gray-300 mb-4">
+            <p className="text-sm  text-gray-300 mb-4">
               Empowering Minds, Enriching Lives. Quality education with 100% board exam success since 2017.
             </p>
             <div className="flex gap-3">

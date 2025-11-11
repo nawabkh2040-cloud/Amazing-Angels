@@ -38,7 +38,7 @@ const ScholarshipsPage = () => {
         <ScrollProgress />
         
         {/* Page Banner */}
-        <section className="relative py-20 bg-gradient-to-r from-primary via-accent to-secondary overflow-hidden">
+        <section className="relative py-10 lg:py-20 bg-gradient-to-r from-primary via-accent to-secondary overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&h=400&fit=crop')] opacity-20 bg-cover bg-center" />
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
@@ -56,7 +56,7 @@ const ScholarshipsPage = () => {
         <Scholarships />
 
         {/* Rules & Code of Conduct */}
-        <section className="py-20 bg-background">
+        <section className="py-10 lg:py-10 lg:py-20 bg-background">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}

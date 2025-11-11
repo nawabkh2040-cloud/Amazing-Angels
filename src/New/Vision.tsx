@@ -64,7 +64,7 @@ const Vision = () => {
       `}</style>
 
       {/* Hero Section */}
-      <section className="relative z-10 flex items-center justify-center px-6 py-16 md:py-24 bg-white">
+      <section className="relative z-10 flex items-center justify-center px-6 py-10 md:py-24 bg-white">
         <div className="text-center max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
             <span className="text-gray-800">
@@ -88,7 +88,7 @@ const Vision = () => {
           <div className="stacking-card flex items-center justify-center max-w-5xl w-full bg-white rounded-3xl overflow-hidden shadow-[0_0_0_1px_rgba(0,0,0,0.05),0_8px_16px_rgba(0,0,0,0.04),0_24px_48px_rgba(0,0,0,0.08)] grid grid-cols-1 lg:grid-cols-2">
             
             {/* Left Image */}
-            <div className="w-full h-80 ">
+            <div className="w-full h-40 lg:h-80 ">
               <img
                 src="/vision2.png"
                 alt="Vision"
@@ -102,10 +102,10 @@ const Vision = () => {
                 <span className="w-1.5 h-1.5 bg-white rounded-full" style={{ animation: 'pulse 2s infinite' }} />
                 Our Vision
               </span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-3">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl p-2 font-semibold text-gray-900 mb-3">
                 Empowering Minds, Enriching Lives
               </h2>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm md:text-base p-2 text-gray-600 leading-relaxed">
                 We envision a world where every child grows with curiosity, compassion, and courage.
                 Our vision is to create leaders who think critically, act ethically, and serve humanity with purpose.
               </p>
@@ -118,7 +118,7 @@ const Vision = () => {
           <div className="stacking-card max-w-5xl flex items-center justify-center w-full bg-white rounded-3xl overflow-hidden shadow-[0_0_0_1px_rgba(0,0,0,0.05),0_8px_16px_rgba(0,0,0,0.04),0_24px_48px_rgba(0,0,0,0.08)] grid grid-cols-1 lg:grid-cols-2">
             
             {/* Left Image (same as Vision) */}
-            <div className="w-full h-80">
+            <div className="w-full h-40 lg:h-80 ">
               <img
                 src="/mission.png"
                 alt="Mission"
@@ -132,10 +132,10 @@ const Vision = () => {
                 <span className="w-1.5 h-1.5 bg-white rounded-full" style={{ animation: 'pulse 2s infinite' }} />
                 Our Mission
               </span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-3">
+              <h2 className="text-2xl md:text-3xl p-2 lg:text-4xl font-semibold text-gray-900 mb-3">
                 Nurturing Future Leaders
               </h2>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm md:text-base p-2 text-gray-600 leading-relaxed">
                 Our mission is to provide a holistic education that nurtures intellectual growth,
                 moral integrity, and a lifelong passion for learning. We aim to cultivate teamwork,
                 resilience, and empathy — preparing every student to thrive in a changing world.
