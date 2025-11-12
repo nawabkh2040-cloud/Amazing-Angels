@@ -5,21 +5,21 @@ export default function SchoolSlider() {
 
   const slides = [
     {
-      image: "https://cdn.pixabay.com/photo/2018/06/10/11/15/schultute-3466186_1280.jpg",
+      image: "https://plus.unsplash.com/premium_photo-1663106423058-c5242333348c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2lkcyUyMHNjaG9vbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
       title: "Welcome to Our School",
       description:
         "Empowering young minds to reach their full potential through quality education and holistic development.",
     },
     {
       image:
-        "/hero2.png",
+        "https://plus.unsplash.com/premium_photo-1661963297627-92799f5658fd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGtpZHMlMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
       title: "Excellence in Education",
       description:
         "State-of-the-art facilities and experienced faculty dedicated to nurturing future leaders and innovators.",
     },
     {
       image:
-        "/hero3.png",
+        "https://images.unsplash.com/photo-1637195141546-2469a5312504?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGtpZHMlMjBzY2hvb2x8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
       title: "Building Tomorrow's Future",
       description:
         "A vibrant learning community where every student is encouraged to dream big and achieve their goals.",
@@ -40,7 +40,7 @@ export default function SchoolSlider() {
   }, []);
 
   return (
-    <div className="relative h-[40vh] lg:h-screen w-full overflow-hidden">
+    <div className="relative h-40 lg:h-80 w-full overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
